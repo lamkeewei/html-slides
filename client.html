@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML Foundations</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>HTML</h1>
+          <h3>A quick introduction</h3>
+          <p>
+            <small>By <a href="">Lam Kee Wei</a></small>
+          </p>
+        </section>        
+        
+        <section data-markdown>
+          ## Follow this presentation
+
+          [http://slides.lamkeewei.com](http://slides.lamkeewei.com)
+        </section>
+
+        <section>
+          <h2>JSFiddle</h2>
+
+          <a href="http://jsfiddle.net" target="_blank">http://jsfiddle.net</a>
+        </section>
+
+        <section>
+          <h2>Have the end in mind</h2>
+          <a href="http://lamkeewei.github.io/portfolio-demo/" target="_blank">http://lamkeewei.github.io/portfolio-demo/</a>
+        </section>
+
+        <section data-markdown>
+          ## So what are we learning?
+
+          <a href="" class="fragment">More importantly, how is this related to getting my A+ for SE!</a>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Just Two Things
+
+            1. Basic HTML Elements <!-- .element: class="fragment" -->
+            2. CSS Styling <!-- .element: class="fragment" -->
+          </script>
+        </section>        
+
+        <section>
+          <h1>Let's get started</h1>
+        </section>
+
+        <section>
+          <section>           
+            <h2>What role does HTML play?</h2>
+            <ul>
+              <li class="fragment">HTML provides the <a>structure</a>.</li>
+              <li class="fragment">CSS provides the <a>visual style</a>.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Huh?</h2>
+            
+            <a href="http://www.facebook.com" target="_blank">Facebook without CSS</a>
+          </section>
+        </section>
+
+
+        <section data-markdown>       
+          <script type="text/template">
+            ## HTML Skeleton
+
+            ```html
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <!-- Configuration stuff -->
+                <!-- Links to external files -->
+              </head>
+              <body>
+                <!-- Your content -->
+              </body>
+            </html>
+            ```
+          </script>
+        </section>
+
+        <section>
+          <h3>What can you put in < Body >?</h3>
+
+          <ol>
+            <li class="fragment">Text</li>
+            <li class="fragment">Pictures</li>
+            <li class="fragment">Links</li>
+          </ol>
+        </section>
+
+        <section>
+          <section>           
+            <h2>Text Elements</h2>
+            <ul>
+              <li>Headings <span style="color: #268bd2">< h1 >, < h2 >, ...</span></li>
+              <li>Paragraph <span style="color: #268bd2">< p ></span></li>
+              <li>Quotes <span style="color: #268bd2">< blockquote ></span></li>
+              <li>Styling <span style="color: #268bd2">< strong >, < em ></span></li>
+            </ul>
+          </section>
+
+          <section>
+            <iframe width="100%" height="500" src="http://jsfiddle.net/lamkeewei/9y9f35sc/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+          </section>
+        </section>
+
+        <section>
+          <section>           
+            <h2>What is the main difference between <br><span style="color: #268bd2">< strong ></span> and <span style="color: #268bd2">< p ></span>?</h2>
+          </section>
+
+          <section>
+            <h2><span class="highlight" style="color: #268bd2">< p ></span> is a <span class="highlight" style="color: #268bd2">block</span> element</h2>
+
+            <p>
+              It breaks up the page into distinctive <em>blocks</em>.
+            </p>
+          </section>
+
+          <section>
+            <h2><span class="highlight" style="color: #268bd2">< strong ></span> is an <span class="highlight" style="color: #268bd2">inline</span> element</h2>
+
+            <p>
+              It stays <em>inline</em>.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Pictures</h2>
+            <p>Just one tag: <span class="highlight">< img ></span></p>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## HTML Attributes
+              
+              ```html
+                <img src="<location of your file>" alt="<description>" />
+              ```
+
+              <small>Helps provide additional info about the tag apart from the content</small>
+            </script>
+          </section>
+
+          <section>
+            <iframe width="100%" height="500" src="http://jsfiddle.net/lamkeewei/xw33mn1s/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+          </section>
+
+          <section>
+            <h2>Is <span class="highlight">< img ></span> a block or inline element?</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>           
+            <h2>Links</h2>
+            <p>The anchor tag: <span class="highlight">< a ></span></p>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ## Attributes
+              
+              <small>Used as a link to external page:</small>
+              ```html
+                <a href="http://..." target="_blank"/>Link text</a>
+              ```
+
+              <small>Used as a link within the page:</small>
+              ```html
+                <a name="there"></a> <!-- Mark the spot you want to jump to -->
+
+                <a href="#there">Jump There</a> <!-- Link to within the page -->
+              ```
+            </script>
+          </section>
+
+          <section>
+            <iframe width="100%" height="500" src="http://jsfiddle.net/lamkeewei/huo0wry4/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+          </section>
+        </section>
+
+        <section>
+          <h2>Quick Exercise</h2>
+          <a target="_blank" href="http://jsfiddle.net/lamkeewei/f7w2xf2r/embedded/result/">Build this!</a>
+        </section>        
+
+        <section>
+          <h2>Structures</h2>
+
+          <ol class="highlight">
+            <li>Lists</li>
+            <li>Tables</li>
+          </ol>
+        </section>
+
+        <section>
+          <section>           
+            <h2>Lists</h2>
+
+            <ol>
+              <li>Unordered List</li>
+              <li>Ordered List</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Unordered List</h2>
+
+            <ul>
+              <li>Item one</li>
+              <li>Item two</li>
+              <li>Item three</li>
+              <li>Item four</li>
+            </ul>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ```html
+              <ul> <!-- ul: Unordered List -->
+                <li>Item one</li>
+                <li>Item two</li>
+                <li>Item three</li>
+                <li>Item four</li>
+              </ul>
+              ```
+            </script>
+          </section>
+
+          <section>
+            <h2>Ordered List</h2>
+
+            <ol>
+              <li>Item one</li>
+              <li>Item two</li>
+              <li>Item three</li>
+              <li>Item four</li>
+            </ol>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ```html
+              <ol> <!-- ol: Ordered List -->
+                <li>Item one</li>
+                <li>Item two</li>
+                <li>Item three</li>
+                <li>Item four</li>
+              </ol>
+              ```
+            </script>
+          </section>
+        </section>
+
+        <section>
+          <section>           
+            <h2>How about a list <span class="highlight">within</span> a list?</h2>
+            <p>List-ception</p>
+          </section>
+
+          <section>
+            <ul>
+              <li class="highlight">Nested List
+                <ol>
+                  <li>Nested item one</li>
+                  <li>Nested item Two</li>
+                </ol>
+              </li>
+
+              <li>Normal Item</li>
+            </ul>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ```html
+              <ul>
+                <li>Nested List <!-- Look here -->
+                  <ol>
+                    <li>Nested item one</li>
+                    <li>Nested item Two</li>
+                  </ol>
+                </li>
+
+                <li>Normal Item</li>
+              </ul>
+              ```
+            </script>
+          </section>
+        </section>
+
+        <section>
+          <section>           
+            <h2>Finally, <span class="highlight">< table ></span></h2>
+          </section>
+
+          <section>
+            <h3>Meet the tags</h3>
+
+            <ul>
+              <li class="fragment"><span class="highlight">Main table tag </span>< table ></li>
+              <li class="fragment"><span class="highlight">Table row tag </span>< tr ></li>
+              <li class="fragment"><span class="highlight">Table header section </span>< thead ></li>
+              <li class="fragment"><span class="highlight">Table header cell </span>< th ></li>
+              <li class="fragment"><span class="highlight">Table body section </span>< tbody ></li>
+              <li class="fragment"><span class="highlight">Table body cell </span>< td ></li>
+            </ul>
+          </section>                
+        </section>
+        
+        <section>
+          <iframe width="100%" height="500" src="http://jsfiddle.net/lamkeewei/mq23wx7q/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </section>    
+
+        <section>
+          <iframe width="100%" height="500" src="http://jsfiddle.net/lamkeewei/mq23wx7q/5/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </section>          
+
+        <section>
+          <iframe width="100%" height="500" src="http://jsfiddle.net/lamkeewei/mq23wx7q/6/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </section>
+
+        <section>
+          <section>
+            <h2>Oh wait, there's still <span class="highlight">forms</span></h2>
+          </section>
+
+          <section>
+            <h2>You've learnt it during <span class="highlight">DM</span></h2>
+            <p class="fragment">
+              But I'm sure you've forgotten everything...
+            </p>
+          </section>
+
+          <section>
+            <h3>
+              <span class="highlight">< form ></span>, <span class="highlight">< label ></span> and <span class="highlight">< input ></span>
+            </h3>
+
+            <p>Let's look at some code!</p>
+          </section>                    
+        </section>
+
+        <section>
+          <iframe width="100%" height="500" src="http://jsfiddle.net/lamkeewei/22x1cqc0/embedded/result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe> 
+        </section>
+
+        <section>
+          <h2>              
+            <a target="_blank" href="http://www.w3schools.com/html/html5_form_input_types.asp">W3Schools</a>
+          </h2>
+        </section>
+
+        <section>
+          <section>
+            <h2>Building Your Portfolio Page</h2>
+            <ol>
+              <li>What <span class="highlight">data</span> do you need to display?</li>
+              <li>What is the <span class="highlight">most suitable element</span> to use?</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Types of Data</h2>
+            <ul>
+              <li class="fragment">Name</li>
+              <li class="fragment">Three qualities</li>
+              <li class="fragment">Skills barchart</li>
+              <li class="fragment">Contact Form</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Types of Element to Use</h2>
+            <ul>
+              <li class="fragment">Name -> <span class="fragment highlight">Heading</span></li>
+              <li class="fragment">Three qualities -> <span class="fragment highlight">List</span></li>
+              <li class="fragment">Skills barchart -> <span class="fragment highlight">???</span></li>
+              <li class="fragment">Contact Form -> <span class="fragment highlight">From</span></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Go build it now!</h2>
+            <a href="http://lamkeewei.github.io/portfolio-demo/">Sample</a>
+          </section>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        multiplex: {
+          secret: null, // Obtained from the socket.io server. Gives this (the master) control of the presentation
+          id: '462f01dfd4c2fa70', // Obtained from socket.io server
+          url: 'revealjs.jit.su:80' // Location of socket.io server
+        },
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+          { src: 'plugin/multiplex/client.js', async: true },
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
